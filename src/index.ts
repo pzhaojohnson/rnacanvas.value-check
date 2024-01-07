@@ -1,7 +1,5 @@
-export function isNumber(value: unknown): value is number {
-  return typeof value == 'number';
-}
+import { isNumber } from './isNumber';
+export { isNumber };
 
-export function isString(value: unknown): value is string {
-  return typeof value == 'string';
-}
+import { isString } from './isString';
+export { isString };
