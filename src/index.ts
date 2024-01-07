@@ -9,3 +9,6 @@ export { isNonFiniteNumber };
 
 import { isString } from './isString';
 export { isString };
+
+import { isNonNullObject, NonNullObject } from './isNonNullObject';
+export { isNonNullObject, NonNullObject };
