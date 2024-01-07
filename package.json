@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/value-check",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A package for checking if a value is of a certain kind",
   "main": "./dist/index.js",
   "scripts": {
