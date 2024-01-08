@@ -21,3 +21,6 @@ export { isNullish, Nullish };
 
 import { isNonNullObject, NonNullObject } from './isNonNullObject';
 export { isNonNullObject, NonNullObject };
+
+import { isArray } from './isArray';
+export { isArray };
