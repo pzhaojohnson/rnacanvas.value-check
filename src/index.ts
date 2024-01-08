@@ -7,6 +7,12 @@ export { isFiniteNumber };
 import { isNonFiniteNumber } from './isNonFiniteNumber';
 export { isNonFiniteNumber };
 
+import { isPositiveFiniteNumber } from './isPositiveFiniteNumber';
+export { isPositiveFiniteNumber };
+
+import { isNonNegativeFiniteNumber } from './isNonNegativeFiniteNumber';
+export { isNonNegativeFiniteNumber };
+
 import { isString } from './isString';
 export { isString };
 
