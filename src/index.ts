@@ -16,5 +16,8 @@ export { isNonNegativeFiniteNumber };
 import { isString } from './isString';
 export { isString };
 
+import { isNullish, Nullish } from './isNullish';
+export { isNullish, Nullish };
+
 import { isNonNullObject, NonNullObject } from './isNonNullObject';
 export { isNonNullObject, NonNullObject };
