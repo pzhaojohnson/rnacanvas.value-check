@@ -120,6 +120,48 @@ isString({}); // false
 isString(null); // false
 ```
 
+## `Nullish`
+
+The `Nullish` type includes the values `null` and `undefined`.
+
+```typescript
+type Nullish = null | undefined;
+```
+
+## `isNullish()`
+
+Returns `true` if and only if a value is `null` or `undefined`.
+
+```javascript
+isNullish(null); // true
+isNullish(undefined); // true
+
+isNullish(1); // false
+isNullish('a'); // false
+isNullish({}); // false
+```
+
+## `NonNullObject`
+
+The `NonNullObject` type matches values of type `object` that are not `null`.
+
+```typescript
+type NonNullObject = { [name: string]: unknown };
+```
+
+## `isNonNullObject()`
+
+Returns `true` if and only if a value is of type `object` and is not `null`.
+
+```javascript
+isNonNullObject({}); // true
+isNonNullObject({ 'a': 2, 'b': 3 }); // true
+
+isNonNullObject(null); // false
+isNonNullObject(5); // false
+isNonNullObject('asdf'); // false
+```
+
 ## `isArray()`
 
 Returns `true` if and only if a value is an array.
