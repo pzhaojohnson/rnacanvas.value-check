@@ -31,3 +31,16 @@ isNumber('5'); // false
 isNumber({}); // false
 isNumber(null); // false
 ```
+
+## `isString()`
+
+Returns `true` if and only if a value is of type `string`.
+
+```javascript
+isString(''); // true
+isString('string'); // true
+
+isString(5); // false
+isString({}); // false
+isString(null); // false
+```
