@@ -32,6 +32,35 @@ isNumber({}); // false
 isNumber(null); // false
 ```
 
+## `isFiniteNumber()`
+
+Returns `true` if and only if a value is of type number
+and it is not `NaN`, `Infinity` or `-Infinity`.
+
+```javascript
+isFiniteNumber(6); // true
+isFiniteNumber(0); // true
+isFiniteNumber(-3.27); // true
+
+isFiniteNumber(NaN); // false
+isFiniteNumber(Infinity); // false
+isFiniteNumber(-Infinity); // false
+```
+
+## `isNonFiniteNumber()`
+
+Returns `true` if and only if a value is `NaN`, `Infinity` or `-Infinity`.
+
+```javascript
+isNonFiniteNumber(NaN); // true
+isNonFiniteNumber(Infinity); // true
+isNonFiniteNumber(-Infinity); // true
+
+isNonFiniteNumber(6); // false
+isNonFiniteNumber(0); // false
+isNonFiniteNumber(-3.27); // false
+```
+
 ## `isString()`
 
 Returns `true` if and only if a value is of type `string`.
