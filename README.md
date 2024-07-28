@@ -45,6 +45,10 @@ isFiniteNumber(-3.27); // true
 isFiniteNumber(NaN); // false
 isFiniteNumber(Infinity); // false
 isFiniteNumber(-Infinity); // false
+
+isFiniteNumber('5'); // false
+isFiniteNumber({}); // false
+isFiniteNumber(null); // false
 ```
 
 ## `isNonFiniteNumber()`
@@ -59,6 +63,10 @@ isNonFiniteNumber(-Infinity); // true
 isNonFiniteNumber(6); // false
 isNonFiniteNumber(0); // false
 isNonFiniteNumber(-3.27); // false
+
+isNoNFiniteNumber('5'); // false
+isNoNFiniteNumber({}); // false
+isNoNFiniteNumber(null); // false
 ```
 
 ## `isPositiveFiniteNumber()`
@@ -74,6 +82,10 @@ isPositiveFiniteNumber(-3.27); // false
 isPositiveFiniteNumber(NaN); // false
 isPositiveFiniteNumber(Infinity); // false
 isPositiveFiniteNumber(-Infinity); // false
+
+isPositiveFiniteNumber('5'); // false
+isPositiveFiniteNumber({}); // false
+isPositiveFiniteNumber(null); // false
 ```
 
 ## `isNonNegativeFiniteNumber()`
@@ -89,6 +101,10 @@ isNonNegativeFiniteNumber(-3.27); // false
 isNonNegativeFiniteNumber(NaN); // false
 isNonNegativeFiniteNumber(Infinity); // false
 isNonNegativeFiniteNumber(-Infinity); // false
+
+isNonNegativeFiniteNumber('5'); // false
+isNonNegativeFiniteNumber({}); // false
+isNonNegativeFiniteNumber(null); // false
 ```
 
 ## `isString()`
