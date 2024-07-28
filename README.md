@@ -119,3 +119,16 @@ isString(5); // false
 isString({}); // false
 isString(null); // false
 ```
+
+## `isArray()`
+
+Returns `true` if and only if a value is an array.
+
+```javascript
+isArray([]); // true
+isArray([1, '2', 'a', {}]); // true
+
+isArray({}); // false
+isArray(2); // false
+isArray(null); // false
+```
