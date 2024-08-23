@@ -30,3 +30,6 @@ export { isNumbersArray };
 
 import { isFiniteNumbersArray } from './isFiniteNumbersArray';
 export { isFiniteNumbersArray };
+
+import { isNonFiniteNumbersArray } from './isNonFiniteNumbersArray';
+export { isNonFiniteNumbersArray };
