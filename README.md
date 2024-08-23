@@ -177,7 +177,7 @@ isArray(null); // false
 
 ## `isNumbersArray()`
 
-Returns `true` if and only if the value is an array of numbers.
+Returns `true` if and only if a value is an array of numbers.
 
 Vacuously returns `true` for an empty array.
 
@@ -192,4 +192,22 @@ isNumbersArray([NaN, Infinity, -Infinity]); // true
 isNumbersArray(2); // false
 isNumbersArray(['2']); // false
 isNumbersArray([1, 2, 3, '4', 5]); // false
+```
+
+## `isFiniteNumbersArray()`
+
+Returns `true` if and only if a value is an array of finite numbers.
+
+Vacuously returns `true` for an empty array.
+
+```javascript
+isFiniteNumbersArray([10]); // true
+isFiniteNumbersArray([-1, 5.5, 2, 101.308]); // true
+
+isFiniteNumbersArray([]); // true
+
+isFiniteNumbersArray([NaN, Infinity, -Infinity]); // false
+
+isFiniteNumbersArray(10); // false
+isFiniteNumbersArray([1, '2', 3]); // false
 ```
