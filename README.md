@@ -229,3 +229,21 @@ isNonFiniteNumbersArray([NaN, NaN, 3, NaN]); // false
 // not an array
 isNonFiniteNumbersArray(Infinity); // false
 ```
+
+## `isStringsArray()`
+
+Returns `true` if and only if a value is an array of strings.
+
+Vacuously returns `true` for an empty array.
+
+```javascript
+isStringsArray(['asdf']); // true
+isStringsArray(['', ' ', 'A', '4']); // true
+
+isStringsArray([]); // true
+
+isStringsArray(['1', '2', 3, '4']); // false
+
+// not an array
+isStringsArray('asdf'); // false
+```
