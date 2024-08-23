@@ -211,3 +211,21 @@ isFiniteNumbersArray([NaN, Infinity, -Infinity]); // false
 isFiniteNumbersArray(10); // false
 isFiniteNumbersArray([1, '2', 3]); // false
 ```
+
+## `isNonFiniteNumbersArray()`
+
+Returns `true` if and only if a value is an array of nonfinite numbers.
+
+Vacuously returns `true` for an empty array.
+
+```javascript
+isNonFiniteNumbersArray([NaN, Infinity, -Infinity]); // true
+
+isNonFiniteNumbersArray([]); // true
+
+isNonFiniteNumbersArray([1, 2, 3, 4]); // false
+isNonFiniteNumbersArray([NaN, NaN, 3, NaN]); // false
+
+// not an array
+isNonFiniteNumbersArray(Infinity); // false
+```
