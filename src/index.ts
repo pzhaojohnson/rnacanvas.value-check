@@ -27,3 +27,6 @@ export { isArray };
 
 import { isNumbersArray } from './isNumbersArray';
 export { isNumbersArray };
+
+import { isFiniteNumbersArray } from './isFiniteNumbersArray';
+export { isFiniteNumbersArray };
