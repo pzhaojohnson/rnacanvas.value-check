@@ -174,3 +174,22 @@ isArray({}); // false
 isArray(2); // false
 isArray(null); // false
 ```
+
+## `isNumbersArray()`
+
+Returns `true` if and only if the value is an array of numbers.
+
+Vacuously returns `true` for an empty array.
+
+```javascript
+isNumbersArray([]); // true
+isNumbersArray([2]); // true
+isNumbersArray([-1, -2, -3, -4]); // true
+
+// nonfinite numbers
+isNumbersArray([NaN, Infinity, -Infinity]); // true
+
+isNumbersArray(2); // false
+isNumbersArray(['2']); // false
+isNumbersArray([1, 2, 3, '4', 5]); // false
+```
