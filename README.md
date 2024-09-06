@@ -175,6 +175,19 @@ isArray(2); // false
 isArray(null); // false
 ```
 
+## `isEmptyArray()`
+
+Returns `true` if and only if a value is an empty array
+(i.e., an array with zero items in it).
+
+```javascript
+isEmptyArray([]); // true
+isEmptyArray([1, 'b', 3]); // false
+
+// not an array
+isEmptyArray('[]'); // false
+```
+
 ## `isNumbersArray()`
 
 Returns `true` if and only if a value is an array of numbers.
