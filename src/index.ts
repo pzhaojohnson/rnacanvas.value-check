@@ -25,6 +25,9 @@ export { isNonNullObject, NonNullObject };
 import { isArray } from './isArray';
 export { isArray };
 
+import { isEmptyArray } from './isEmptyArray';
+export { isEmptyArray };
+
 import { isNumbersArray } from './isNumbersArray';
 export { isNumbersArray };
 
