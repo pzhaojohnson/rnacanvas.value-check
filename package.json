@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/value-check",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Check if a value meets certain criteria",
   "main": "./dist/index.js",
   "scripts": {

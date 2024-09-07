@@ -34,6 +34,9 @@ export { isNonEmptyArray };
 import { isNumbersArray } from './isNumbersArray';
 export { isNumbersArray };
 
+import { isNonEmptyNumbersArray } from './isNonEmptyNumbersArray';
+export { isNonEmptyNumbersArray };
+
 import { isFiniteNumbersArray } from './isFiniteNumbersArray';
 export { isFiniteNumbersArray };
 
