@@ -28,6 +28,9 @@ export { isArray };
 import { isEmptyArray } from './isEmptyArray';
 export { isEmptyArray };
 
+import { isNonEmptyArray } from './isNonEmptyArray';
+export { isNonEmptyArray };
+
 import { isNumbersArray } from './isNumbersArray';
 export { isNumbersArray };
 
