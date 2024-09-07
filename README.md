@@ -238,7 +238,7 @@ isNonEmptyNumbersArray([NaN, Infinity, -Infinity]); // true
 // not an array of numbers
 isNonEmptyNumbersArray([1, '2', 3]); // false
 
-// not an array
+// not an array (is a string)
 isNonEmptyNumbersArray('[1, 2, 3]'); // false
 ```
 
