@@ -188,6 +188,21 @@ isEmptyArray([1, 'b', 3]); // false
 isEmptyArray('[]'); // false
 ```
 
+## `isNonEmptyArray()`
+
+Returns `true` if and only if a value is a nonempty array
+(i.e., an array with at least one item).
+
+```javascript
+isNonEmptyArray([1, 'b', 3]); // true
+isNonEmptyArray(['a']); // true
+
+isNonEmptyArray([]); // false
+
+// not an array
+isNonEmptyArray('[1, 2, 3]'); // false
+```
+
 ## `isNumbersArray()`
 
 Returns `true` if and only if a value is an array of numbers.
