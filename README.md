@@ -295,3 +295,20 @@ isStringsArray(['1', '2', 3, '4']); // false
 // not an array
 isStringsArray('asdf'); // false
 ```
+
+## `isNonEmptyStringsArray()`
+
+Returns `true` if and only if a value is an array of strings and is nonempty.
+
+```javascript
+isNonEmptyStringsArray(['asdf']); // true
+isNonEmptyStringsArray(['a', 'b', 'c', 'd']); // true
+
+isNonEmptyStringsArray([]); // false
+
+// not an array of strings
+isNonEmptyStringsArray(['a', 'b', 3, 'd']); // false
+
+// not an array
+isNonEmptyStringsArray('asdf'); // false
+```
