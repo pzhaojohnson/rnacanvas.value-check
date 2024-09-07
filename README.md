@@ -222,6 +222,26 @@ isNumbersArray(['2']); // false
 isNumbersArray([1, 2, 3, '4', 5]); // false
 ```
 
+## `isNonEmptyNumbersArray()`
+
+Returns `true` if and only if a value is an array of numbers and is nonempty.
+
+```javascript
+isNonEmptyNumbersArray([1]); // true
+isNonEmptyNumbersArray([1, 2, 3, 4]); // true
+
+isNonEmptyNumbersArray([]); // false
+
+// nonfinite numbers
+isNonEmptyNumbersArray([NaN, Infinity, -Infinity]); // true
+
+// not an array of numbers
+isNonEmptyNumbersArray([1, '2', 3]); // false
+
+// not an array
+isNonEmptyNumbersArray('[1, 2, 3]'); // false
+```
+
 ## `isFiniteNumbersArray()`
 
 Returns `true` if and only if a value is an array of finite numbers.
