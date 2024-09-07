@@ -45,3 +45,6 @@ export { isNonFiniteNumbersArray };
 
 import { isStringsArray } from './isStringsArray';
 export { isStringsArray };
+
+import { isNonEmptyStringsArray } from './isNonEmptyStringsArray';
+export { isNonEmptyStringsArray };
