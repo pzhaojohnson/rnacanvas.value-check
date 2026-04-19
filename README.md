@@ -149,6 +149,28 @@ isJSON([1, 2, 3]); // false
 isJSON(2); // false
 ```
 
+## `function isJSONSerializable()`
+
+Returns `true` if a value can be serialized to a JSON string.
+
+Returns `false` otherwise.
+
+```javascript
+isJSONSerializable({ "a": 1, "b": 2 }); // true
+
+var o = {};
+
+// a circular reference
+o.o = o;
+
+isJSONSerializable(o); // false
+
+// some simple cases
+isJSONSerializable([1, 2, 3]); // true
+isJSONSerializable('asdf'); // true
+isJSONSerializable(2); // true
+```
+
 ## `Nullish`
 
 The `Nullish` type includes the values `null` and `undefined`.
