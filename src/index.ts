@@ -16,6 +16,9 @@ export { isNonNegativeFiniteNumber };
 import { isString } from './isString';
 export { isString };
 
+import { isJSON } from './isJSON';
+export { isJSON };
+
 import { isNullish, Nullish } from './isNullish';
 export { isNullish, Nullish };
 
