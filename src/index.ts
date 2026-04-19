@@ -19,6 +19,9 @@ export { isString };
 import { isJSON } from './isJSON';
 export { isJSON };
 
+import { isJSONSerializable } from './isJSONSerializable';
+export { isJSONSerializable };
+
 import { isNullish, Nullish } from './isNullish';
 export { isNullish, Nullish };
 
