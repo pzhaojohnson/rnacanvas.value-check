@@ -120,6 +120,33 @@ isString({}); // false
 isString(null); // false
 ```
 
+## `function isWhitespace()`
+
+Returns `true` if a value is a string and composed entirely of whitespace characters
+(e.g., spaces, tabs, newline characters).
+
+Vacuously returns `true` for empty strings.
+
+Returns `false` otherwise.
+
+```javascript
+isWhitespace(' '); // true
+
+isWhitespace(' \t \n \r \r\n '); // true
+
+// vacuously returns true for empty strings
+isWhitespace(''); // true
+
+isWhitespace('asdf'); // false
+
+isWhitespace('     a       '); // false
+
+// non-string values
+isWhitespace(0); // false
+isWhitespace([]); // false
+isWhitespace(undefined); // false
+```
+
 ## `function isJSON()`
 
 Returns `true` if a value is a string in JSON format.
