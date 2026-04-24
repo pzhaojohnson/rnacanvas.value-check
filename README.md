@@ -127,7 +127,7 @@ Returns `true` if a value is a string and composed entirely of whitespace charac
 
 Vacuously returns `true` for empty strings.
 
-Returns `false` otherwise.
+Otherwise returns `false`. (Returns `false` for non-string values.)
 
 ```javascript
 isWhitespace(' '); // true
