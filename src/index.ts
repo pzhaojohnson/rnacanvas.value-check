@@ -25,6 +25,12 @@ export { isJSON };
 import { isJSONSerializable } from './isJSONSerializable';
 export { isJSONSerializable };
 
+import { isTruthy } from './isTruthy';
+export { isTruthy };
+
+import { isFalsy } from './isFalsy';
+export { isFalsy };
+
 import { isNullish, Nullish } from './isNullish';
 export { isNullish, Nullish };
 
@@ -57,9 +63,3 @@ export { isStringsArray };
 
 import { isNonEmptyStringsArray } from './isNonEmptyStringsArray';
 export { isNonEmptyStringsArray };
-
-import { isTruthy } from './isTruthy';
-export { isTruthy };
-
-import { isFalsy } from './isFalsy';
-export { isFalsy };
