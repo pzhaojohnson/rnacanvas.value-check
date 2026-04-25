@@ -7,7 +7,7 @@ import { isString } from './isString';
  *
  * Returns `false` otherwise.
  */
-export function isWhitespace(value: unknown): value is string {
+export function isWhitespace(value: unknown): boolean {
   if (!isString(value)) {
     return false;
   }
