@@ -138,6 +138,29 @@ isEmptyString({}); // false
 isEmptyString(undefined); // false
 ```
 
+## `function isNonEmptyString()`
+
+Returns `true` if a value is a string
+and is not an empty string.
+
+Returns `false` otherwise.
+
+```javascript
+isNonEmptyString('asdf'); // true
+
+// an empty string
+isNonEmptyString(''); // false
+
+// whitespace
+isNonEmptyString('   '); // true
+
+// non-string values
+isNonEmptyString(1); // false
+isNonEmptyString(true); // false
+isNonEmptyString({}); // false
+isNonEmptyString(undefined); // false
+```
+
 ## `function isWhitespace()`
 
 Returns `true` if a value is a string and composed entirely of whitespace characters
