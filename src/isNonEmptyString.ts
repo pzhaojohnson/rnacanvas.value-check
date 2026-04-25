@@ -7,6 +7,6 @@ import { isEmptyString } from './isEmptyString';
  *
  * Returns `false` otherwise.
  */
-export function isNonEmptyString(value: unknown): value is string {
+export function isNonEmptyString(value: unknown): boolean {
   return isString(value) && !isEmptyString(value);
 }
