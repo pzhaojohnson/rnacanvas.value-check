@@ -198,6 +198,46 @@ isJSONSerializable('asdf'); // true
 isJSONSerializable(2); // true
 ```
 
+## `function isTruthy()`
+
+Returns `true` if a value is truthy and `false` otherwise.
+
+```javascript
+isTruthy(true); // true
+isTruthy(false); // false
+
+isTruthy(1); // true
+isTruthy(0); // false
+
+isTruthy('asdf'); // true
+isTruthy(''); // false
+
+isTruthy({}); // true
+
+isTruthy(null); // false
+isTruthy(undefined); // false
+```
+
+## `function isFalsy()`
+
+Returns `true` if a value is falsy and `false` otherwise.
+
+```javascript
+isFalsy(false); // true
+isFalsy(true); // false
+
+isFalsy(0); // true
+isFalsy(1); // false
+
+isFalsy(''); // true
+isFalsy('asdf'); // false
+
+isFalsy({}); // false
+
+isFalsy(null); // true
+isFalsy(undefined); // true
+```
+
 ## `Nullish`
 
 The `Nullish` type includes the values `null` and `undefined`.
