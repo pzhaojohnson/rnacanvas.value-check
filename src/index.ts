@@ -57,3 +57,9 @@ export { isStringsArray };
 
 import { isNonEmptyStringsArray } from './isNonEmptyStringsArray';
 export { isNonEmptyStringsArray };
+
+import { isTruthy } from './isTruthy';
+export { isTruthy };
+
+import { isFalsy } from './isFalsy';
+export { isFalsy };
