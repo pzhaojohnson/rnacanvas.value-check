@@ -143,6 +143,8 @@ isEmptyString(undefined); // false
 Returns `true` if a value is a string
 and is not an empty string.
 
+(Returns `true` for strings composed entirely of whitespace characters.)
+
 Returns `false` otherwise.
 
 ```javascript
