@@ -19,6 +19,9 @@ export { isString };
 import { isEmptyString } from './isEmptyString';
 export { isEmptyString };
 
+import { isNonEmptyString } from './isNonEmptyString';
+export { isNonEmptyString };
+
 import { isWhitespace } from './isWhitespace';
 export { isWhitespace };
 
