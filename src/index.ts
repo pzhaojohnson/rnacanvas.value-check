@@ -16,6 +16,9 @@ export { isNonNegativeFiniteNumber };
 import { isString } from './isString';
 export { isString };
 
+import { isEmptyString } from './isEmptyString';
+export { isEmptyString };
+
 import { isWhitespace } from './isWhitespace';
 export { isWhitespace };
 
