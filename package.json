@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/value-check",
-  "version": "2.6.1",
+  "version": "2.7.0",
   "description": "Check if a value meets certain criteria",
   "main": "./dist/index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "@babel/preset-typescript": "^7.23.3",
     "babel-jest": "^30.3.0",
     "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.4.1",
     "ts-loader": "^9.5.1",
     "typescript": "^6.0.3",
     "webpack": "^5.89.0",

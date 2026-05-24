@@ -69,3 +69,6 @@ export { isStringsArray };
 
 import { isNonEmptyStringsArray } from './isNonEmptyStringsArray';
 export { isNonEmptyStringsArray };
+
+import { isSVGGraphicsElement } from './isSVGGraphicsElement';
+export { isSVGGraphicsElement };
