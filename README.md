@@ -473,3 +473,30 @@ isNonEmptyStringsArray(['a', 'b', 3, 'd']); // false
 // not an array
 isNonEmptyStringsArray('asdf'); // false
 ```
+
+## `function isSVGGraphicsElement()`
+
+Returns `true` if a value is an instance of `SVGGraphicsElement`.
+
+Returns `false` otherwise.
+
+```javascript
+var value = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+isSVGGraphicsElement(value); // true
+
+var value = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+isSVGGraphicsElement(value); // true
+
+// an SVG element (but not an SVG graphics element)
+var value = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+isSVGGraphicsElement(value); // false
+
+// an HTML element
+var value = document.createElement('div');
+isSVGGraphicsElement(value); // false
+
+// some random values
+isSVGGraphicsElement(1); // false
+isSVGGraphicsElement('asdf'); // false
+isSVGGraphicsElement(null); // false
+```
